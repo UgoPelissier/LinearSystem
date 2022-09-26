@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E419B3B328DE0F02009C85F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E419B3B228DE0F02009C85F9 /* main.cpp */; };
+		E419B3BB28DE0F26009C85F9 /* Matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E419B3B928DE0F26009C85F9 /* Matrices.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		E419B3AF28DE0F02009C85F9 /* LinearSystem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinearSystem; sourceTree = BUILT_PRODUCTS_DIR; };
 		E419B3B228DE0F02009C85F9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E419B3B928DE0F26009C85F9 /* Matrices.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrices.cpp; sourceTree = "<group>"; };
+		E419B3BA28DE0F26009C85F9 /* Matrices.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrices.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		E419B3B128DE0F02009C85F9 /* LinearSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E419B3B928DE0F26009C85F9 /* Matrices.cpp */,
+				E419B3BA28DE0F26009C85F9 /* Matrices.hpp */,
 				E419B3B228DE0F02009C85F9 /* main.cpp */,
 			);
 			path = LinearSystem;
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E419B3B328DE0F02009C85F9 /* main.cpp in Sources */,
+				E419B3BB28DE0F26009C85F9 /* Matrices.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +245,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
